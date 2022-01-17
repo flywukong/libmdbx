@@ -2994,6 +2994,7 @@ static __hot int __must_check_result mdbx_pnl_insert_range(MDBX_PNL *ppl,
 static bool mdbx_pnl_check(const MDBX_PNL pl, const size_t limit) {
   if (limit >= MIN_PAGENO - MDBX_ENABLE_REFUND){
      printf("The value of limit : %zu", limit);
+     printf("The value of value : %zu", MIN_PAGENO - MDBX_ENABLE_REFUND);
      assert(limit >= MIN_PAGENO - MDBX_ENABLE_REFUND);
   }
   assert(limit >= MIN_PAGENO - MDBX_ENABLE_REFUND);
